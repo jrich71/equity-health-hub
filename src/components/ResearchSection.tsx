@@ -65,7 +65,7 @@ const ResearchSection = () => {
     <section id="research" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+          <h2 className="text-4xl md:text-5xl font-sans font-bold text-primary mb-6">
             Research & Publications
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -85,7 +85,7 @@ const ResearchSection = () => {
                     <BookOpen className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <CardTitle className="text-xl font-serif text-primary mb-2 leading-tight">
+                    <CardTitle className="text-xl font-sans text-primary mb-2 leading-tight">
                       {pub.title}
                     </CardTitle>
                     <CardDescription className="text-sm">

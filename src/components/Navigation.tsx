@@ -41,7 +41,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-xl font-serif font-bold text-primary hover:text-accent transition-colors"
+            className="text-xl font-sans font-bold text-primary hover:text-accent transition-colors"
           >
             AI for Global Health Equity
           </button>

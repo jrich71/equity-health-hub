@@ -34,7 +34,7 @@ const FrameworksSection = () => {
     <section id="frameworks" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+          <h2 className="text-4xl md:text-5xl font-sans font-bold text-primary mb-6">
             Equity-Based Implementation Frameworks
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -54,7 +54,7 @@ const FrameworksSection = () => {
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-accent" />
                   </div>
-                  <CardTitle className="text-2xl font-serif text-primary mb-2">
+                  <CardTitle className="text-2xl font-sans text-primary mb-2">
                     {framework.title}
                   </CardTitle>
                   <CardDescription className="font-semibold text-foreground/70">

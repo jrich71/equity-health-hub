@@ -38,7 +38,7 @@ const NewsSection = () => {
     <section id="news" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+          <h2 className="text-4xl md:text-5xl font-sans font-bold text-primary mb-6">
             News & Updates
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -62,7 +62,7 @@ const NewsSection = () => {
                     {item.date}
                   </div>
                 </div>
-                <CardTitle className="text-xl font-serif text-primary mb-2 group-hover:text-accent transition-colors">
+                <CardTitle className="text-xl font-sans text-primary mb-2 group-hover:text-accent transition-colors">
                   {item.title}
                 </CardTitle>
               </CardHeader>

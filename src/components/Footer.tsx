@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-serif font-bold mb-4">
+              <h3 className="text-xl font-sans font-bold mb-4">
                 AI for Global Health Equity
               </h3>
               <p className="text-sm text-primary-foreground/80 leading-relaxed">

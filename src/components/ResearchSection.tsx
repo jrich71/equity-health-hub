@@ -12,15 +12,14 @@ const publications = [
     description:
       "Helping determine that digital technologies are equitable at every phase of the digital healthcare lifecycle.",
     tags: ["Fairness", "Clinical AI"],
-    link: "https://pubmed.ncbi.nlm.nih.gov/39553827/",
+    link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11565864/",
   },
   {
     title: "Leveraging artificial intelligence to advance implementation science: potential opportunities and cautions",
     authors: "Trinkley KE, et al.",
     year: "2024",
-    journal: "JAMIA Open",
-    description:
-      "Leveraging AI to conduct implementation research including in global health settings.",
+    journal: "Implementation Science",
+    description: "Leveraging AI to conduct implementation research including in global health settings.",
     tags: ["Fairness", "Clinical AI"],
     link: "https://link.springer.com/article/10.1186/s13012-024-01346-y",
   },

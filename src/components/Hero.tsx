@@ -26,10 +26,10 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-sans font-bold text-primary-foreground mb-6 leading-tight">
-            Building Equity into the Future of Health AI
+            Building Equity into Health AI Implementations Around the World
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed max-w-3xl">
-            This site brings together key frameworks, research, and voices advancing equity in global health AI.
+            This site brings together key implementation frameworks, research, and voices advancing equity in global health AI.
           </p>
           <p className="text-lg text-primary-foreground/80 mb-10 max-w-2xl">
             Equitable AI starts with evidence, collaboration, and design that centers human context.

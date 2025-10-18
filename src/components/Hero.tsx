@@ -25,7 +25,7 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-primary-foreground mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-sans font-bold text-primary-foreground mb-6 leading-tight">
             Building Equity into the Future of Health AI
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed max-w-3xl">

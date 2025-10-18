@@ -11,7 +11,7 @@ const frameworks = [
     description:
       "Four overarching principles and four key categories of risk to guide the use of GenAI for health, with a focus on ensuring equitable global implementation",
     tags: ["Case Studies", "LMIC"],
-    link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12095475/",
+    link: "https://www.nature.com/articles/s41746-025-01695-y",
   },
   {
     title: "Ethics and Governance of Generative AI for Health",
@@ -65,10 +65,7 @@ const FrameworksSection = () => {
                 <p className="text-foreground/80 leading-relaxed">{framework.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {framework.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="px-2 py-1 bg-accent/10 text-accent text-xs rounded-full"
-                    >
+                    <span key={tagIndex} className="px-2 py-1 bg-accent/10 text-accent text-xs rounded-full">
                       {tag}
                     </span>
                   ))}

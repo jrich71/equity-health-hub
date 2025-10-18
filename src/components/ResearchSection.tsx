@@ -5,36 +5,6 @@ import { Badge } from "@/components/ui/badge";
 
 const publications = [
   {
-    title: "A framework for considering the use of generative AI for health",
-    authors: "de Vere Hunt IJ, Jin KX, Linos E",
-    year: "2025",
-    journal: "NPJ Digital Medicine",
-    description:
-      "Four overarching principles and four key categories of risk to guide the use of GenAI for health, with a focus on ensuring equitable global implementation",
-    tags: ["Case Studies", "LMIC"],
-    link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12095475/",
-  },
-  {
-    title: "Ethics and Governance of Generative AI for Health",
-    authors: "World Health Organization",
-    year: "2024",
-    journal: "WHO Publications",
-    description:
-      "Official WHO guidance on ethical deployment and governance of large language models and generative AI in healthcare.",
-    tags: ["Ethics", "Policy", "WHO"],
-    link: "https://www.who.int/publications/i/item/9789240084759",
-  },
-  {
-    title: "The Ubuntu Way: Ensuring Ethical AI Integration in Health Research",
-    authors: "Odero B, Nderitu D, Samuel G",
-    year: "2024",
-    journal: "Wellcome Open Research",
-    description:
-      "The Ubuntu framework has the potential to foster more responsible and contextually relevant AI health research practices in Africa",
-    tags: ["Framework", "Digital Health"],
-    link: "https://wellcomeopenresearch.org/articles/9-625",
-  },
-  {
     title: "Development of an evidence- and consensus-based Digital Healthcare Equity Framework",
     authors: "Hatef E, et al.",
     year: "2024",
@@ -55,14 +25,14 @@ const publications = [
     link: "https://ghrp.biomedcentral.com/articles/10.1186/s41256-024-00388-5",
   },
   {
-    title: "Conceptual framework of equity-focused implementation research for health programs (EquIR)",
-    authors: "Eslava-Schmalbach, J, et al.",
-    year: "2019",
-    journal: "International Journal for Equity in Health",
+    title: "Leveraging artificial intelligence to advance implementation science: potential opportunities and cautions",
+    authors: "Trinkley KE, et al.",
+    year: "2024",
+    journal: "Implementation Science",
     description:
-      "EquIR is a conceptual framework that aims to reduce or prevent the increase of existing inequalities during implementation.",
+      "Artificial intelligence applications offers opportunities to help address implementation issues including in global health.",
     tags: ["Framework", "Implementation Science"],
-    link: "https://equityhealthj.biomedcentral.com/articles/10.1186/s12939-019-0984-4",
+    link: "https://link.springer.com/article/10.1186/s13012-024-01346-y",
   },
 ];
 

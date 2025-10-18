@@ -4,28 +4,34 @@ import { ExternalLink, BookOpen, Globe, FileText } from "lucide-react";
 
 const frameworks = [
   {
-    title: "EquIR Framework",
-    subtitle: "Equity-Based Implementation Research",
-    description: "A model for embedding equity in every phase of implementation research.",
-    details: "These frameworks help practitioners translate ethical intent into equitable implementation.",
-    icon: BookOpen,
-    link: "https://implementationscience.biomedcentral.com/articles/10.1186/s13012-023-01333-z",
+    title: "A framework for considering the use of generative AI for health",
+    authors: "de Vere Hunt IJ, Jin KX, Linos E",
+    year: "2025",
+    journal: "NPJ Digital Medicine",
+    description:
+      "Four overarching principles and four key categories of risk to guide the use of GenAI for health, with a focus on ensuring equitable global implementation",
+    tags: ["Case Studies", "LMIC"],
+    link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12095475/",
   },
   {
-    title: "Digital Healthcare Equity Framework",
-    subtitle: "Evidence- and Consensus-Based Guide",
-    description: "A consensus-driven guide for addressing bias and access in digital health.",
-    details: "Built through systematic review and expert consensus to identify key equity considerations.",
-    icon: Globe,
-    link: "https://www.nature.com/articles/s41746-023-00954-x",
-  },
-  {
-    title: "WHO Guidance (2024)",
-    subtitle: "Ethics and Governance of AI in Health",
-    description: "Official WHO recommendations on governance of generative and LLM-based AI tools in health.",
-    details: "Comprehensive policy guidance for ethical deployment of AI in healthcare settings.",
-    icon: FileText,
+    title: "Ethics and Governance of Generative AI for Health",
+    authors: "World Health Organization",
+    year: "2024",
+    journal: "WHO Publications",
+    description:
+      "Official WHO guidance on ethical deployment and governance of large language models and generative AI in healthcare.",
+    tags: ["Ethics", "Policy", "WHO"],
     link: "https://www.who.int/publications/i/item/9789240084759",
+  },
+  {
+    title: "The Ubuntu Way: Ensuring Ethical AI Integration in Health Research",
+    authors: "Odero B, Nderitu D, Samuel G",
+    year: "2024",
+    journal: "Wellcome Open Research",
+    description:
+      "The Ubuntu framework has the potential to foster more responsible and contextually relevant AI health research practices in Africa",
+    tags: ["Framework", "Digital Health"],
+    link: "https://wellcomeopenresearch.org/articles/9-625",
   },
 ];
 
@@ -54,30 +60,14 @@ const FrameworksSection = () => {
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-accent" />
                   </div>
-                  <CardTitle className="text-2xl font-sans text-primary mb-2">
-                    {framework.title}
-                  </CardTitle>
-                  <CardDescription className="font-semibold text-foreground/70">
-                    {framework.subtitle}
-                  </CardDescription>
+                  <CardTitle className="text-2xl font-sans text-primary mb-2">{framework.title}</CardTitle>
+                  <CardDescription className="font-semibold text-foreground/70">{framework.subtitle}</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-foreground/80 leading-relaxed">
-                    {framework.description}
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    {framework.details}
-                  </p>
-                  <Button
-                    variant="outline"
-                    className="w-full group"
-                    asChild
-                  >
-                    <a
-                      href={framework.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                  <p className="text-foreground/80 leading-relaxed">{framework.description}</p>
+                  <p className="text-sm text-muted-foreground">{framework.details}</p>
+                  <Button variant="outline" className="w-full group" asChild>
+                    <a href={framework.link} target="_blank" rel="noopener noreferrer">
                       Learn More
                       <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </a>

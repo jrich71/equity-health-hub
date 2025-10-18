@@ -14,24 +14,14 @@ const publications = [
     tags: ["Fairness", "Clinical AI"],
     link: "https://pubmed.ncbi.nlm.nih.gov/39553827/",
   },
-
-  {
-    title: "How to leverage implementation research for equity in global health",
-    authors: "Alonge O",
-    year: "2024",
-    journal: "Global Health Research and Policy",
-    description: "Explicit considerations for health equity as part of implementation research in global health.",
-    tags: ["Community Engagement", "Design"],
-    link: "https://ghrp.biomedcentral.com/articles/10.1186/s41256-024-00388-5",
-  },
   {
     title: "Leveraging artificial intelligence to advance implementation science: potential opportunities and cautions",
     authors: "Trinkley KE, et al.",
     year: "2024",
-    journal: "Implementation Science",
+    journal: "JAMIA Open",
     description:
-      "Artificial intelligence applications offers opportunities to help address implementation issues including in global health.",
-    tags: ["Framework", "Implementation Science"],
+      "Leveraging AI to conduct implementation research including in global health settings.",
+    tags: ["Fairness", "Clinical AI"],
     link: "https://link.springer.com/article/10.1186/s13012-024-01346-y",
   },
 ];

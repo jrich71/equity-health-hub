@@ -49,33 +49,39 @@ const FrameworksSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {frameworks.map((framework, index) => {
-            const Icon = framework.icon;
-            return (
-              <Card
-                key={index}
-                className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border bg-card"
-              >
-                <CardHeader>
-                  <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="w-6 h-6 text-accent" />
-                  </div>
-                  <CardTitle className="text-2xl font-sans text-primary mb-2">{framework.title}</CardTitle>
-                  <CardDescription className="font-semibold text-foreground/70">{framework.subtitle}</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-foreground/80 leading-relaxed">{framework.description}</p>
-                  <p className="text-sm text-muted-foreground">{framework.details}</p>
-                  <Button variant="outline" className="w-full group" asChild>
-                    <a href={framework.link} target="_blank" rel="noopener noreferrer">
-                      Learn More
-                      <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
-            );
-          })}
+          {frameworks.map((framework, index) => (
+            <Card
+              key={index}
+              className="hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border bg-card"
+            >
+              <CardHeader>
+                <CardTitle className="text-xl font-sans text-primary mb-2">{framework.title}</CardTitle>
+                <CardDescription className="font-semibold text-foreground/70">
+                  {framework.authors} ({framework.year})
+                </CardDescription>
+                <CardDescription className="text-sm italic">{framework.journal}</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-foreground/80 leading-relaxed">{framework.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {framework.tags.map((tag, tagIndex) => (
+                    <span
+                      key={tagIndex}
+                      className="px-2 py-1 bg-accent/10 text-accent text-xs rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <Button variant="outline" className="w-full group" asChild>
+                  <a href={framework.link} target="_blank" rel="noopener noreferrer">
+                    Learn More
+                    <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

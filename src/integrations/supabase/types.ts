@@ -94,6 +94,7 @@ export type Database = {
           id: string
           link: string | null
           name: string
+          placement: number
           role: string
           type: string
           updated_at: string
@@ -105,6 +106,7 @@ export type Database = {
           id?: string
           link?: string | null
           name: string
+          placement?: number
           role: string
           type: string
           updated_at?: string
@@ -116,6 +118,7 @@ export type Database = {
           id?: string
           link?: string | null
           name?: string
+          placement?: number
           role?: string
           type?: string
           updated_at?: string

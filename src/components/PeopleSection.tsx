@@ -22,7 +22,7 @@ const PeopleSection = () => {
       const { data, error } = await supabase
         .from("people_networks")
         .select("*")
-        .order("created_at", { ascending: true });
+        .order("placement", { ascending: true });
       
       if (error) throw error;
       return data as Person[];

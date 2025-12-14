@@ -14,7 +14,117 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      frameworks: {
+        Row: {
+          authors: string
+          created_at: string
+          description: string
+          id: string
+          journal: string
+          link: string
+          tags: string[]
+          title: string
+          updated_at: string
+          year: string
+        }
+        Insert: {
+          authors: string
+          created_at?: string
+          description: string
+          id?: string
+          journal: string
+          link: string
+          tags?: string[]
+          title: string
+          updated_at?: string
+          year: string
+        }
+        Update: {
+          authors?: string
+          created_at?: string
+          description?: string
+          id?: string
+          journal?: string
+          link?: string
+          tags?: string[]
+          title?: string
+          updated_at?: string
+          year?: string
+        }
+        Relationships: []
+      }
+      multimedia: {
+        Row: {
+          created_at: string
+          description: string
+          id: string
+          source: string
+          speaker: string | null
+          title: string
+          updated_at: string
+          youtube_url: string
+        }
+        Insert: {
+          created_at?: string
+          description: string
+          id?: string
+          source: string
+          speaker?: string | null
+          title: string
+          updated_at?: string
+          youtube_url: string
+        }
+        Update: {
+          created_at?: string
+          description?: string
+          id?: string
+          source?: string
+          speaker?: string | null
+          title?: string
+          updated_at?: string
+          youtube_url?: string
+        }
+        Relationships: []
+      }
+      publications: {
+        Row: {
+          authors: string
+          created_at: string
+          description: string
+          id: string
+          journal: string
+          link: string
+          tags: string[]
+          title: string
+          updated_at: string
+          year: string
+        }
+        Insert: {
+          authors: string
+          created_at?: string
+          description: string
+          id?: string
+          journal: string
+          link: string
+          tags?: string[]
+          title: string
+          updated_at?: string
+          year: string
+        }
+        Update: {
+          authors?: string
+          created_at?: string
+          description?: string
+          id?: string
+          journal?: string
+          link?: string
+          tags?: string[]
+          title?: string
+          updated_at?: string
+          year?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

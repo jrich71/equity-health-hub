@@ -86,6 +86,42 @@ export type Database = {
         }
         Relationships: []
       }
+      people_networks: {
+        Row: {
+          affiliation: string
+          created_at: string
+          focus: string
+          id: string
+          link: string | null
+          name: string
+          role: string
+          type: string
+          updated_at: string
+        }
+        Insert: {
+          affiliation: string
+          created_at?: string
+          focus: string
+          id?: string
+          link?: string | null
+          name: string
+          role: string
+          type: string
+          updated_at?: string
+        }
+        Update: {
+          affiliation?: string
+          created_at?: string
+          focus?: string
+          id?: string
+          link?: string | null
+          name?: string
+          role?: string
+          type?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       publications: {
         Row: {
           authors: string

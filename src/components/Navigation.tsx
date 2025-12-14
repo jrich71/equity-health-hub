@@ -41,7 +41,9 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-xl font-sans font-bold text-primary hover:text-accent transition-colors"
+            className={`text-xl font-sans font-bold transition-colors ${
+              isScrolled ? "text-primary hover:text-accent" : "text-primary-foreground hover:text-accent"
+            }`}
           >
             AI for Global Health Equity
           </button>
@@ -52,7 +54,9 @@ const Navigation = () => {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-sm font-medium text-foreground hover:text-accent transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  isScrolled ? "text-foreground hover:text-accent" : "text-primary-foreground hover:text-accent"
+                }`}
               >
                 {link.label}
               </button>
@@ -78,7 +82,9 @@ const Navigation = () => {
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-left text-sm font-medium text-foreground hover:text-accent transition-colors"
+                  className={`text-left text-sm font-medium transition-colors ${
+                    isScrolled ? "text-foreground hover:text-accent" : "text-primary-foreground hover:text-accent"
+                  }`}
                 >
                   {link.label}
                 </button>

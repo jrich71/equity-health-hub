@@ -6,6 +6,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/equity-health-hub/",
   server: {
     host: "::",
     port: 8080,
@@ -24,8 +25,8 @@ export default defineConfig(({ mode }) => ({
         background_color: "#ffffff",
         display: "standalone",
         orientation: "portrait-primary",
-        scope: "/",
-        start_url: "/",
+        scope: "/equity-health-hub/",
+        start_url: "/equity-health-hub/",
         icons: [
           {
             src: "/pwa-192x192.png",

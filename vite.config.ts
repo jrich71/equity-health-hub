@@ -6,7 +6,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/equity-health-hub/",
+  base: mode === "production" ? "/equity-health-hub/" : "/",
   server: {
     host: "::",
     port: 8080,

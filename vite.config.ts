@@ -5,8 +5,11 @@ import { componentTagger } from "lovable-tagger";
 import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/equity-health-hub/" : "/",
+export default defineConfig(({ mode }) => {
+  const appBase = mode === "production" ? "/equity-health-hub/" : "/";
+
+  return {
+  base: appBase,
   server: {
     host: "::",
     port: 8080,
@@ -25,21 +28,21 @@ export default defineConfig(({ mode }) => ({
         background_color: "#ffffff",
         display: "standalone",
         orientation: "portrait-primary",
-        scope: "/equity-health-hub/",
-        start_url: "/equity-health-hub/",
+        scope: appBase,
+        start_url: appBase,
         icons: [
           {
-            src: "/pwa-192x192.png",
+            src: `${appBase}pwa-192x192.png`,
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/pwa-512x512.png",
+            src: `${appBase}pwa-512x512.png`,
             sizes: "512x512",
             type: "image/png",
           },
           {
-            src: "/pwa-512x512.png",
+            src: `${appBase}pwa-512x512.png`,
             sizes: "512x512",
             type: "image/png",
             purpose: "maskable",
@@ -80,4 +83,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-}));
+  };
+});
